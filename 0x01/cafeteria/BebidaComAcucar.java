@@ -9,14 +9,14 @@ public class BebidaComAcucar extends BebidaDecorator{
     }
 
     @Override
-    List<String> obterIngredientes() {
+    public List<String> obterIngredientes() {
         List<String> ingredientes = bebidaDecorada.obterIngredientes();
         ingredientes.add("acucar");
         return ingredientes;
     }
 
     @Override
-    double obterPreco() {
+    public double obterPreco() {
         return bebidaDecorada.obterPreco() + 1.9;
     }
 }

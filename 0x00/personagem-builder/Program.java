@@ -1,7 +1,3 @@
-import personagembuilder.Director;
-import personagembuilder.GuerreiroBuilder;
-import personagembuilder.LadraoBuilder;
-import personagembuilder.MagoBuilder;
 
 import java.util.Locale;
 

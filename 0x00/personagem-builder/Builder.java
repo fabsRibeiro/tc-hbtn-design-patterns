@@ -14,5 +14,5 @@ public interface Builder {
 
     void setNome(String nome);
 
-    void setTipoPersonagem(personagem.TipoPersonagem tipoPersonagem);
+    void setTipoPersonagem(TipoPersonagem tipoPersonagem);
 }

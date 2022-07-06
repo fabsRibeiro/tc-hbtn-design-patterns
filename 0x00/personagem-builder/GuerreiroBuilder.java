@@ -1,17 +1,17 @@
 
 
-public class GuerreiroBuilder implements personagem.Builder {
+public class GuerreiroBuilder implements Builder {
 
     private String nome;
-    private personagem.TipoPersonagem tipoPersonagem;
+    private TipoPersonagem tipoPersonagem;
     private int inteligencia;
     private int forca;
     private int vigor;
     private int resistencia;
     private int destreza;
 
-    public personagem.Guerreiro build(){
-        return new personagem.Guerreiro(nome, inteligencia, forca, vigor, resistencia, destreza);
+    public Guerreiro build(){
+        return new Guerreiro(nome, inteligencia, forca, vigor, resistencia, destreza);
     }
 
     @Override
@@ -45,7 +45,7 @@ public class GuerreiroBuilder implements personagem.Builder {
     }
 
     @Override
-    public void setTipoPersonagem(personagem.TipoPersonagem tipoPersonagem) {
+    public void setTipoPersonagem(TipoPersonagem tipoPersonagem) {
         this.tipoPersonagem = tipoPersonagem;
     }
 }

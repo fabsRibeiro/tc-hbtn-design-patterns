@@ -1,17 +1,17 @@
 
 
-public class LadraoBuilder implements personagem.Builder {
+public class LadraoBuilder implements Builder {
 
     private String nome;
-    private personagem.TipoPersonagem tipoPersonagem;
+    private TipoPersonagem tipoPersonagem;
     private int inteligencia;
     private int forca;
     private int vigor;
     private int resistencia;
     private int destreza;
 
-    public personagem.Ladrao build(){
-        return new personagem.Ladrao(nome, inteligencia, forca, vigor, resistencia, destreza);
+    public Ladrao build(){
+        return new Ladrao(nome, inteligencia, forca, vigor, resistencia, destreza);
     }
 
     @Override
@@ -45,7 +45,7 @@ public class LadraoBuilder implements personagem.Builder {
     }
 
     @Override
-    public void setTipoPersonagem(personagem.TipoPersonagem tipoPersonagem) {
+    public void setTipoPersonagem(TipoPersonagem tipoPersonagem) {
         this.tipoPersonagem = tipoPersonagem;
     }
 }

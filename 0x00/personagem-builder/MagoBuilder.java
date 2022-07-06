@@ -1,17 +1,17 @@
 
 
-public class MagoBuilder implements personagem.Builder {
+public class MagoBuilder implements Builder {
 
     private String nome;
-    private personagem.TipoPersonagem tipoPersonagem;
+    private TipoPersonagem tipoPersonagem;
     private int inteligencia;
     private int forca;
     private int vigor;
     private int resistencia;
     private int destreza;
 
-    public personagem.Mago build(){
-        return new personagem.Mago(nome, inteligencia, forca, vigor, resistencia, destreza);
+    public Mago build(){
+        return new Mago(nome, inteligencia, forca, vigor, resistencia, destreza);
     }
 
     @Override
@@ -45,7 +45,7 @@ public class MagoBuilder implements personagem.Builder {
     }
 
     @Override
-    public void setTipoPersonagem(personagem.TipoPersonagem tipoPersonagem) {
+    public void setTipoPersonagem(TipoPersonagem tipoPersonagem) {
         this.tipoPersonagem = tipoPersonagem;
     }
 }

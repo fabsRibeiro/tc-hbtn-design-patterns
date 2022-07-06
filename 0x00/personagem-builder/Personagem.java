@@ -3,14 +3,14 @@
 public abstract class Personagem {
 
     private String nome;
-    private personagem.TipoPersonagem tipo;
+    private TipoPersonagem tipo;
     private int inteligencia;
     private int forca;
     private int vigor;
     private int resistencia;
     private int destreza;
 
-    public Personagem(String nome, personagem.TipoPersonagem tipo, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
+    public Personagem(String nome, TipoPersonagem tipo, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
         this.nome = nome;
         this.tipo = tipo;
         this.inteligencia = inteligencia;
@@ -28,11 +28,11 @@ public abstract class Personagem {
         this.nome = nome;
     }
 
-    public personagem.TipoPersonagem getTipo() {
+    public TipoPersonagem getTipo() {
         return tipo;
     }
 
-    public void setTipo(personagem.TipoPersonagem tipo) {
+    public void setTipo(TipoPersonagem tipo) {
         this.tipo = tipo;
     }
 

@@ -1,34 +1,37 @@
-
+import personagembuilder.Director;
+import personagembuilder.GuerreiroBuilder;
+import personagembuilder.LadraoBuilder;
+import personagembuilder.MagoBuilder;
 
 public class Program {
     public static void main(String[] args) {
-        personagem.Director director = new personagem.Director();
+        Director director = new Director();
 
-        personagem.GuerreiroBuilder guerreiroBuilder = new personagem.GuerreiroBuilder();
+        GuerreiroBuilder guerreiroBuilder = new GuerreiroBuilder();
         director.buildGuerreiro(guerreiroBuilder);
 
-        personagem.MagoBuilder magoBuilder = new personagem.MagoBuilder();
+        MagoBuilder magoBuilder = new MagoBuilder();
         director.buildMago(magoBuilder);
 
-        personagem.LadraoBuilder ladraoBuilder = new personagem.LadraoBuilder();
+        LadraoBuilder ladraoBuilder = new LadraoBuilder();
         director.buildLadrao(ladraoBuilder);
 
         try {
-            personagem.Mago mago = magoBuilder.build();
+            Mago mago = magoBuilder.build();
             System.out.println(mago);
         } catch(Exception ex) {
             System.out.println(ex.getMessage());
         }
 
         try {
-            personagem.Ladrao ladrao = ladraoBuilder.build();
+            Ladrao ladrao = ladraoBuilder.build();
             System.out.println(ladrao);
         } catch(Exception ex) {
             System.out.println(ex.getMessage());
         }
 
         try {
-            personagem.Guerreiro guerreiro = guerreiroBuilder.build();
+            Guerreiro guerreiro = guerreiroBuilder.build();
             System.out.println(guerreiro);
         } catch(Exception ex) {
             System.out.println(ex.getMessage());

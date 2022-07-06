@@ -2,9 +2,9 @@
 
 public class Director {
 
-    void buildGuerreiro(personagem.Builder builder){
+    void buildGuerreiro(Builder builder){
         builder.setNome("Guerreiro");
-        builder.setTipoPersonagem(personagem.TipoPersonagem.GUERREIRO);
+        builder.setTipoPersonagem(TipoPersonagem.GUERREIRO);
         builder.setInteligencia(1);
         builder.setForca(8);
         builder.setDestreza(6);
@@ -12,9 +12,9 @@ public class Director {
         builder.setResistencia(10);
     }
 
-    void buildLadrao(personagem.Builder builder){
+    void buildLadrao(Builder builder){
         builder.setNome("Ladrão");
-        builder.setTipoPersonagem(personagem.TipoPersonagem.LADRAO);
+        builder.setTipoPersonagem(TipoPersonagem.LADRAO);
         builder.setInteligencia(2);
         builder.setForca(6);
         builder.setDestreza(10);
@@ -22,9 +22,9 @@ public class Director {
         builder.setResistencia(5);
     }
 
-    void buildMago(personagem.Builder builder){
+    void buildMago(Builder builder){
         builder.setNome("Mago");
-        builder.setTipoPersonagem(personagem.TipoPersonagem.MAGO);
+        builder.setTipoPersonagem(TipoPersonagem.MAGO);
         builder.setInteligencia(10);
         builder.setForca(2);
         builder.setDestreza(4);

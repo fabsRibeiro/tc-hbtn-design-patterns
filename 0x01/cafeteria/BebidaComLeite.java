@@ -1,6 +1,5 @@
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class BebidaComLeite extends BebidaDecorator{
@@ -11,13 +10,13 @@ public class BebidaComLeite extends BebidaDecorator{
 
     @Override
     public List<String> obterIngredientes() {
-        List<String> ingredientes = bebidaDecorada.obterIngredientes();
+        List<String> ingredientes = super.obterIngredientes();
         ingredientes.add("leite");
         return ingredientes;
     }
 
     @Override
     public double obterPreco() {
-        return bebidaDecorada.obterPreco() + 3.2;
+        return super.obterPreco() + 3.2;
     }
 }

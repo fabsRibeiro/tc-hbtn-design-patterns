@@ -13,7 +13,7 @@ public class Director {
     }
 
     public void buildLadrao(Builder builder){
-        builder.setNome("Ladrão");
+        builder.setNome("Ladrao");
         builder.setTipoPersonagem(TipoPersonagem.LADRAO);
         builder.setInteligencia(2);
         builder.setForca(6);

@@ -2,7 +2,7 @@
 
 public class Director {
 
-    void buildGuerreiro(Builder biulder){
+    public void buildGuerreiro(Builder biulder){
         biulder.setNome("Guerreiro");
         biulder.setTipoPersonagem(TipoPersonagem.GUERREIRO);
         biulder.setInteligencia(1);
@@ -12,7 +12,7 @@ public class Director {
         biulder.setResistencia(10);
     }
 
-    void buildLadrao(Builder builder){
+    public void buildLadrao(Builder builder){
         builder.setNome("Ladrão");
         builder.setTipoPersonagem(TipoPersonagem.LADRAO);
         builder.setInteligencia(2);
@@ -22,7 +22,7 @@ public class Director {
         builder.setResistencia(5);
     }
 
-    void buildMago(Builder builder){
+    public void buildMago(Builder builder){
         builder.setNome("Mago");
         builder.setTipoPersonagem(TipoPersonagem.MAGO);
         builder.setInteligencia(10);

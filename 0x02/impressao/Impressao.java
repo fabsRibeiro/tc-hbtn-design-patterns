@@ -84,6 +84,14 @@ public class Impressao {
 
     @Override
     public String toString() {
+
+        if(valorPretoBrancoFrenteApenas != 0 || valorColoridasFrenteApenas != 0){
+            return String.format("total de paginas: " + paginasTotais + ", " +
+                    "total coloridas: " + paginasColoridas + ", " +
+                    "total preto e branco: " + totalPagImpressaoPretoEBanco + "," +
+                    " frente apenas. total: R$ %.2f", calcularTotal());
+        }
+
         return String.format("total de paginas: " + paginasTotais + ", " +
                 "total coloridas: " + paginasColoridas + ", " +
                 "total preto e branco: " + totalPagImpressaoPretoEBanco + "," +

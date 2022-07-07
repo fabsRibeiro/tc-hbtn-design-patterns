@@ -61,13 +61,31 @@ public class Pedido {
         String cabecalhoDentroDaCaixa = "\tDentro da Caixa:\n";
         String itensForaDaCaixa = "";
         String itensDentroDaCaixa = "";
+        int contator = this.itensDentroCaixa.size();
 
         for (ItemPedido itemPedido : this.itensForaCaixa) {
             itensForaDaCaixa = itensForaDaCaixa + "\t\t- " + itemPedido.getTipo().name() + " " + itemPedido.getNome() + "\n";
         }
 
-        for (ItemPedido itemPedido : this.itensDentroCaixa){
-            itensDentroDaCaixa = itensDentroDaCaixa + "\t\t- " + itemPedido.getTipo().name() +  " " + itemPedido.getNome() + "\n";
+        while(contator != 0){
+            for (ItemPedido itemPedido : this.itensDentroCaixa) {
+                if(contator == this.itensDentroCaixa.size()){
+                    if(itemPedido.getTipo().name() == "BRINDE" ){
+                        itensDentroDaCaixa = itensDentroDaCaixa + "\t\t- " + itemPedido.getTipo().name() + " " + itemPedido.getNome() + "\n";
+                    }
+                }
+                if(contator == this.itensDentroCaixa.size()-1){
+                    if(itemPedido.getTipo().name() == "BATATA" ){
+                        itensDentroDaCaixa = itensDentroDaCaixa + "\t\t- " + itemPedido.getTipo().name() + " " + itemPedido.getNome() + "\n";
+                    }
+                }
+                if(contator == this.itensDentroCaixa.size()-2){
+                    if(itemPedido.getTipo().name() == "LANCHE" ){
+                        itensDentroDaCaixa = itensDentroDaCaixa + "\t\t- " + itemPedido.getTipo().name() + " " + itemPedido.getNome() + "\n";
+                    }
+                }
+            }
+            contator--;
         }
 
         return (cabecalhoForaDaCaixa + itensForaDaCaixa + cabecalhoDentroDaCaixa + itensDentroDaCaixa);

@@ -57,22 +57,20 @@ public class Pedido {
 
     @Override
     public String toString() {
+        String cabecalhoForaDaCaixa = "\tFora da Caixa:\n";
+        String cabecalhoDentroDaCaixa = "\tDentro da Caixa:\n";
+        String itensForaDaCaixa = "";
+        String itensDentroDaCaixa = "";
 
-        //Iterator<ItemPedido> iD = itensDentroCaixa.iterator();
-        String dados = "";
-        //while(iD.hasNext()) {
-        for (ItemPedido itemPedido : this.itensDentroCaixa) {
-            dados = dados + "\t\t- " + itemPedido.getTipo().name() + " " + itemPedido.getNome() +"\n" ;
+        for (ItemPedido itemPedido : this.itensForaCaixa) {
+            itensForaDaCaixa = itensForaDaCaixa + "\t\t- " + itemPedido.getTipo().name() + " " + itemPedido.getNome() + "\n";
         }
-            //ItemPedido itemPedidoD = iD.next();
 
-        Iterator<ItemPedido> iF = itensForaCaixa.iterator();
-        String fora = "";
-        while(iF.hasNext()) {
-            ItemPedido itemPedido = iF.next();
-            fora = fora + "\t\t- " + itemPedido.getTipo().name() + " " + itemPedido.getNome() +"\n";
+        for (ItemPedido itemPedido : this.itensDentroCaixa){
+            itensDentroDaCaixa = itensDentroDaCaixa + "\t\t- " + itemPedido.getTipo().name() +  " " + itemPedido.getNome() + "\n";
         }
-        return String.format("\tFora da Caixa:\n%s" +
-                "\tDentro da Caixa:\n%s", fora, dados);
+
+        return (cabecalhoForaDaCaixa + itensForaDaCaixa + cabecalhoDentroDaCaixa + itensDentroDaCaixa);
+
     }
 }

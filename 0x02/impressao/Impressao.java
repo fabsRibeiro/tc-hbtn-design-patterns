@@ -87,6 +87,6 @@ public class Impressao {
         return String.format("total de paginas: " + paginasTotais + ", " +
                 "total coloridas: " + paginasColoridas + ", " +
                 "total preto e branco: " + totalPagImpressaoPretoEBanco + "," +
-                " frente e verso|frente. total: R$ %.2f", calcularTotal());
+                " frente e verso. total: R$ %.2f", calcularTotal());
     }
 }

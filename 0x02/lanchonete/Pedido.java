@@ -87,6 +87,11 @@ public class Pedido {
             }
             contator--;
         }
+        if(this.itensDentroCaixa.size() == 1) {
+            for (ItemPedido itemPedido : this.itensDentroCaixa) {
+                itensDentroDaCaixa = itensDentroDaCaixa + "\t\t- " + itemPedido.getTipo().name() + " " + itemPedido.getNome() + "\n";
+            }
+        }
 
         return (cabecalhoForaDaCaixa + itensForaDaCaixa + cabecalhoDentroDaCaixa + itensDentroDaCaixa);
 

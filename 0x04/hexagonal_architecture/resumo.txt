@@ -1,3 +1,4 @@
+- Escreva um breve resumo (máximo 500 palavras) utilizando apenas o material disponibilizado nesse projeto. O resumo deverá conter as seguintes informações:
 O que é Arquitetura Hexagonal e por quem ela foi criada?
 Arquitetura Hexagonal foi um modelo criado por Alistair Cockburn, a arquiterua hexagonal é a ideia de
 construir sistemas que favorecem reusabilidade de código, alta coesão, baixo acoplamento, independência de tecnologia e que são mais fáceis de serem testados.
